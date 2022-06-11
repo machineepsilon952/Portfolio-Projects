@@ -1,5 +1,4 @@
 import pandas as pd
-import os
 
 from sklearn.preprocessing import OrdinalEncoder
 from sklearn.preprocessing import StandardScaler
@@ -9,7 +8,6 @@ from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
 
-os.chdir("/home/ethan/Datasets/")
 df = pd.read_csv("drug_classification.csv")
 
 enc = OrdinalEncoder()
