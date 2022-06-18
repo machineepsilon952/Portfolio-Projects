@@ -1,5 +1,4 @@
 library(forecast)
-setwd("/home/ethan/Datasets/population")
 df = read.csv(file = 'POP.csv')
 
 pop = ts(df["value"], start = 1, frequency = 1)
