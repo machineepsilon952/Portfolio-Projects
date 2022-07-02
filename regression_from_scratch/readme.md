@@ -13,5 +13,5 @@ By performing a QR factorization, we end up with an orthogonal matrix Q, which h
 transpose, and an upper triangular matrix R.
 
 This means that Ax = b+r becomes QRx=b+r which can be solved as follows.
-Rx = Q^Tb +Q^T r.  Q^t r =0 since r is orthogonal to the column space of Q so this equation becomes
+$Rx = Q^Tb +Q^T r$.  Q^t r =0 since r is orthogonal to the column space of Q so this equation becomes
 Rx = Q^t b which can be solved using backsubstitution.
