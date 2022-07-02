@@ -13,5 +13,5 @@ By performing a QR factorization, we end up with an orthogonal matrix Q, which h
 transpose, and an upper triangular matrix R.
 
 This means that $Ax = b+r$ becomes $QR\vec{x}=\vec{b}+\vec{r}$ which can be solved as follows.
-$R\vec{x} = Q^T\vec{b} +Q^T \vec{r}$.  $Q^t \vec{r} =0$ since $\vec{r}$ is orthogonal to the column space of $Q$ so this equation becomes
-$R\vec{x} = Q^T \vec{b}$ which can be solved using backsubstitution.
+$R\vec{x} = Q^T\vec{b} +Q^T \vec{r}$.  $Q^t \vec{r} =0$ since $\vec{r}$ is orthogonal to the column space of $Q$
+so this equation becomes $R\vec{x} = Q^T \vec{b}$ which can be solved using backsubstitution.
