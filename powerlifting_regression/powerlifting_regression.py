@@ -10,9 +10,10 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
 import statsmodels.api as sm
 import pylab as py
-useful_col = ['Sex', 'Equipment', 'Age', 'Division', 'BodyweightKg', 'WeightClassKg','BestSquatKg', 'BestBenchKg', 'BestDeadliftKg', 'TotalKg']
-df = pd.read_csv("openpowerlifting.csv", usecols = useful_col)
-
+# used to read the origional file from kaggle
+#useful_col = ['Sex', 'Equipment', 'Age', 'Division', 'BodyweightKg', 'WeightClassKg','BestSquatKg', 'BestBenchKg', 'BestDeadliftKg', 'TotalKg']
+#df = pd.read_csv("openpowerlifting.csv", usecols = useful_col)
+df = pd.read_csv("powerlifting_processed.csv")
 
 # columns that include names will not be used in this analysis
 # derived quantities like wilks are nice however are derived from quantities we are trying
