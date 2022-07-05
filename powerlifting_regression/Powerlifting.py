@@ -10,7 +10,6 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
 import statsmodels.api as sm
 import pylab as py
-os.chdir("/home/ethan/Datasets/Powerlifting")
 useful_col = ['Sex', 'Equipment', 'Age', 'Division', 'BodyweightKg', 'WeightClassKg','BestSquatKg', 'BestBenchKg', 'BestDeadliftKg', 'TotalKg']
 df = pd.read_csv("openpowerlifting.csv", usecols = useful_col)
 
